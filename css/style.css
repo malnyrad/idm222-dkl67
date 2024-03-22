@@ -967,7 +967,7 @@ main > img.project-horizontal {
     }
 
     h5 {
-        font-size: 2.5vw;
+        font-size: 2.3vw;
     }
 
     h6 {
@@ -975,7 +975,7 @@ main > img.project-horizontal {
     }
 
     p {
-        font-size: 1.5vw;
+        font-size: 1.25vw;
     }
 
     .logo {
@@ -995,7 +995,7 @@ main > img.project-horizontal {
     }
 
     main > ul, main li {
-        font-size: 1.5vw; 
+        font-size: 1.25vw; 
     }
 
     /*spacing =============================*/
@@ -1037,12 +1037,8 @@ main > img.project-horizontal {
     }
 
     .next-button a.button-link {
-        display: inline-block;
         font-size: 2.5vw;
         left: 65vw;
-        position: absolute;
-        text-align: right;
-        width: 25vw;
         z-index: 2;
     }
 
@@ -1050,32 +1046,26 @@ main > img.project-horizontal {
         font-size: 2vw;
         left: 34.5vw;
         top: 2.5vw;
-        width: 25vw;
         z-index: 2;
     }
 
     .back-button img, .back-to-top img {
         left: 26.5vw;
-        position: relative;
         top: -5vw;
         width: var(--rhythm-2);
         z-index: 2;
     }
 
     .back-button a.button-link {
-        color: var(--background-dark);
         font-size: 2.5vw;
         left: 17vw;
-        position: relative;
         top: -9.25vw;
         z-index: 2;
     }
 
     .back-to-top a.button-link {
-        color: var(--background-dark);
         font-size: 2.5vw;
         left: 18vw;
-        position: relative;
         top: -9.25vw;
         z-index: 2;
     }
@@ -1083,22 +1073,10 @@ main > img.project-horizontal {
     /*navigation ==================================================================*/
 
     .header-bar {
-        align-items: center;
-        background-color: #151710;
-        box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, .25);
-        display: flex;
-        flex-direction: column;
-        width: 17.5%;
-        justify-content: start;
-        margin: auto;
-        position: fixed;
-        top: 0;
         height: 100%;
+        justify-content: start;
+        width: 17.5%;
         z-index: 2;
-    }
-
-    #toggle {
-        opacity: 0;
     }
 
     #toggle:checked ~ .menu-overlay {
@@ -1117,35 +1095,16 @@ main > img.project-horizontal {
         right: 0;
     }
 
-    .menu-item {
-        color: var(--background-light);
-        position: fixed;
-        font-family: var(--ot-round-mono);
+    .menu-item, .selected-menu-item { 
         font-size: 2.5vw;
         font-style: normal;
-        font-weight: 700;
         padding: 1vw 2vw;
-        text-align: left;
-        text-decoration: none;
-        transition-duration: .25s;
-        width: 17.5%;
-    }
-
-    .selected-menu-item {
         position: fixed;
-        font-family: var(--ot-round-mono);
-        font-size: 2.5vw;
-        font-style: normal;
-        font-weight: 700;
-        padding: 1vw 2vw;
         text-align: left;
-        text-decoration: none;
-        transition-duration: .25s;
         width: 17.5%;
     }
 
     .menu-item:hover, .selected-menu-item:hover {
-        background-color: rgba(9, 13, 3, 0.75);
         font-style: italic;
     }
 
@@ -1199,7 +1158,6 @@ main > img.project-horizontal {
 
     .project-header {
         font-size: 6vw;
-        margin-bottom: 0;
     }
 
     main > p {
@@ -1208,38 +1166,19 @@ main > img.project-horizontal {
     }
 
     main > img {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: var(--rhythm-1);
         width: 20vw;
     }
 
     main > img.project-vertical {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: 2vw;
         width: 20vw;
     }
 
     main > img.project-horizontal {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: var(--rhythm-1);
         width: 40vw;
     }
 
     .vertical-photoset > .triple-column {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
         padding-top: 1.5vw;
         width: 17.5vw;
     }
@@ -1256,8 +1195,6 @@ main > img.project-horizontal {
     }
 
     .personal-nav {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: -1.5vw;
         padding-top: 0.5vw;
         position: relative;
@@ -1266,44 +1203,26 @@ main > img.project-horizontal {
 
     .personal-subheader {
         font-size: 3vw;
-        font-style: italic;
-        text-decoration: none;
     }
 
     .personal-subheader-r {
         font-size: 3vw;
-        font-style: italic;
-        text-decoration: none;
-        position: relative;
         left: 54vw;
     }
 
     .scrollable {
-        border-radius: 0.5vw;
         margin-bottom: 2vw;
-        margin-left: 1.5vw;
-        max-width: 60vw;
-        overflow-x: clip;
-        overflow-y: auto;
-        position: relative;
-    }
-
-    .photo-section {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        margin-left: 11vw;
+        max-width: 40vw;
     }
 
     .photo-section img {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
-        margin: 1.5vw;
-        width: 60vw;
+        margin: 0.5vw;
+        width: 40vw;
     }
 
     .scrollable > .vertical-photoset img {
-        width: 28.5vw;
+        width: 19.5vw;
     }
 
     /*about me page ===============================================================*/
@@ -1319,28 +1238,17 @@ main > img.project-horizontal {
     }
 
     .about-me img {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        position: relative;
         top: 2vw;
-        width: 25vw;
+        width: 20vw;
     }
 
     .about-me img.horizontal-image {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        position: relative;
         top: 2.5vw;
-        width: 35vw;
+        width: 25vw;
     }
 
     .about-icons {
-        align-items: center;
-        background-color: #151710;
-        border-radius: 1vw;
         box-shadow: 0 1vw 1vw rgba(0, 0, 0, .25);
-        display: flex;
-        justify-content: center;
         margin-top: 2vw;
         position: relative;
         top: -2.5vw;
@@ -1357,7 +1265,6 @@ main > img.project-horizontal {
 
     .resume-icon {
         left: 29.5vw;
-        position: relative;
         top: 4.25vw;
         width: 4vw;
         z-index: 2;
@@ -1365,7 +1272,6 @@ main > img.project-horizontal {
 
     .resume-circle {
         left: 55vw;
-        position: absolute;
         top: 20.5vw;
         width: 8vw;
         z-index: -1;
@@ -1380,7 +1286,7 @@ main > img.project-horizontal {
     }
 
     section {
-        margin: 0 5vw;
+        margin: 0 5vw 0 8vw;
     }
 
     section.blank-space {
