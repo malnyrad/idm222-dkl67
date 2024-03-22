@@ -342,6 +342,7 @@ img {
 .bg-deco {
     background-attachment: fixed;
     background-image: url("../images/bg_sphere2.png");
+    background-position: top right;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -617,6 +618,26 @@ main > img.project-horizontal {
 
 /*personal page ===============================================================*/
 
+.personal-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vw;
+}
+
+.personal-subheader {
+    font-size: 6vw;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.personal-subheader-r {
+    font-size: 6vw;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+    left: 63vw;
+}
+
 .scrollable {
     border-radius: 0.5vw;
     max-width: 80vw;
@@ -672,8 +693,8 @@ main > img.project-horizontal {
 }
 
 .about-icons img {
-    margin: 6vw;
-    width: 15vw;
+    margin: 4vw 6vw;
+    width: 12.5vw;
 }
 
 /*resume page =================================================================*/
@@ -746,55 +767,11 @@ main > img.project-horizontal {
     }
 
     /*spacing =============================*/
-
     .blank-space {
         padding-top: var(--rhythm-3);
     }
-    
-    /*images ==============================*/
-
-    img {
-        width: 100%;
-    }
-
-    .vertical-photoset {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .vertical-photoset img {
-        width: 43vw;
-    }
-
-    .bg-deco {
-        background-attachment: fixed;
-        background-image: url("../images/bg_sphere2.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    .bg-deco-2 {
-        background-attachment: fixed;
-        background-image: url("../images/bg_sphere.png");
-        background-position: bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
+ 
     /*buttons =============================*/
-
-    .see-more-button img {
-        left: 21.35vw;
-        position: relative;
-        width: var(--rhythm-3);
-    }
-    
-    .see-more-button a.button-link {
-        left: -7vw;
-        position: relative;
-        top: -6vw;
-    }
-    
     .prev-button a.button-subheader {
         left: 5vw;
     }
@@ -805,24 +782,19 @@ main > img.project-horizontal {
     
     .back-button img, .back-to-top img {
         left: 30vw;
-        position: relative;
         width: var(--rhythm-3);
     }
     
     .back-button a.button-link {
-        color: var(--background-dark);
         font-size: 3.5vw;
         left: 16vw;
-        position: relative;
         top: -6.5vw;
     }
     
     .back-to-top a.button-link {
-        color: var(--background-dark);
-        font-size: 4.5vw;
-        left: 15.5vw;
-        position: relative;
-        top: -8.5vw;
+        font-size: 4vw;
+        left: 16.5vw;
+        top: -6.5vw;
     }
     
     /*navigation ==================================================================
@@ -870,16 +842,229 @@ main > img.project-horizontal {
         width: 45vw;
     }
 
-    .project-box {
-        align-items: center;
-        background-color: #151710;
-        border-radius: 1vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
-        display: flex;
-        flex-direction: column;
-        padding-left: var(--rhythm-1);
-        padding-right: var(--rhythm-1);
-        padding-top: var(--rhythm-4);
+    .project-box h2 {
+        margin-top: 0;
+    }
+
+    .project-box p {
+        margin-bottom: 3vw;
+    }
+
+    .project-blurb {
+        font-size: 3vw;
+    }
+
+    /*projects pages ==============================================================*/
+
+    .project-header {
+        font-size: 10.5vw;
+    }
+
+    main > img {
+        width: 30vw;
+    }
+
+    main > img.project-vertical {
+        width: 40vw;
+    }
+
+    main > img.project-horizontal {
+        width: 60vw;
+    }
+
+    .vertical-photoset > .triple-column {
+        width: 22.5vw;
+    }
+
+    /*personal page ===============================================================*/
+
+    .personal-subheader {
+        font-size: 4.5vw;
+    }
+    
+    .personal-subheader-r {
+        font-size: 4.5vw;
+        left: 57.5vw;
+    }
+
+    .scrollable {
+        max-width: 75vw;
+    }
+
+    .photo-section img {
+        width: 75vw;
+    }
+
+    .scrollable > .vertical-photoset img {
+        width: 33.5vw;
+    }
+
+    /*about me page ===============================================================*/
+
+    .about-me img {
+        top: var(--rhythm-3);
+        width: 40vw;
+    }
+
+    .about-me img.horizontal-image {
+        width: 60vw;
+    }
+
+    .about-icons {
+        margin-top: -10vw;
+        max-width: 80vw;
+    }
+
+    .about-icons img {
+        margin: 4vw;
+        width: 10vw;
+    }
+
+    /*resume page =================================================================*/
+
+    .resume-icon {
+        left: 33.8vw;
+        top: 7vw;
+        width: 6vw;
+    }
+
+    .resume-circle {
+        left: 45.5vw;
+        top: 47.5vw;
+        width: 12.5vw;
+    }
+
+    .resume-dates {
+        font-size: 3.25vw;
+    }
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+
+@media (min-width: 1280px) {
+    /*general formatting ==========================================================*/
+    /*elements ============================*/
+    main {
+        margin: 0 var(--rhythm-4);
+    }
+
+    /*text ================================*/
+    h1 {
+        font-size: 32vw; 
+    }
+
+    h2 {
+        font-size: 8vw; 
+    }
+
+    h3 {
+        font-size: 9vw; 
+    }
+
+    h5 {
+        font-size: 4.75vw;
+    }
+
+    h6 {
+        font-size: 12vw; 
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    .logo {
+        position: relative;
+        top: -1vw;
+    }
+
+    .page-header {
+        font-size: 12vw;
+    }
+
+    .tag-line {
+        font-size: 3.5vw;
+    }
+
+    main > ul, main li {
+        font-size: 2.5vw;
+    }
+
+    /*spacing =============================*/
+    .blank-space {
+        padding-top: var(--rhythm-3);
+    }
+ 
+    /*buttons =============================*/
+    .prev-button a.button-subheader {
+        left: 5vw;
+    }
+    
+    .next-button a.button-subheader {
+        left: 39.5vw;
+    }
+    
+    .back-button img, .back-to-top img {
+        left: 30vw;
+        width: var(--rhythm-3);
+    }
+    
+    .back-button a.button-link {
+        font-size: 3.5vw;
+        left: 16vw;
+        top: -6.5vw;
+    }
+    
+    .back-to-top a.button-link {
+        font-size: 4vw;
+        left: 16.5vw;
+        top: -6.5vw;
+    }
+    
+    /*navigation ==================================================================
+        - sliding hamburger menu: https://codepen.io/alvarotrigo/pen/yLzaPVJ*/
+
+    .header-bar {
+        height: var(--rhythm-3);
+    }
+
+    .menu-button {
+        top: 4.5vw;
+        width: 7.5vw;
+    }
+
+    .menu-overlay {
+        align-items: end;
+        background: linear-gradient(to right, rgba(15, 19, 9, 0), rgba(15, 19, 9, .8));
+        box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, 0);
+        display: grid;
+    }
+
+    .menu-item, .selected-menu-item {
+        font-size: 6.5vw;
+        width: 100%;
+    }
+
+    /*home page ===================================================================
+        - overlapping reference: https://jsfiddle.net/25UTA/1/*/
+
+    .title-top {
+        top: 50vw;
+    }
+
+    article {
+        top: -15vw;
+    }
+
+    article > img {
+        top: var(--rhythm-3);
+        width: 27.5vw;
+    }
+
+    article > img.horizontal-image {
+        top: var(--rhythm-3);
+        width: 45vw;
     }
 
     .project-box h2 {
@@ -913,70 +1098,51 @@ main > img.project-horizontal {
     }
 
     .vertical-photoset > .triple-column {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        width: 25.5vw;
+        width: 22.5vw;
     }
 
     /*personal page ===============================================================*/
 
-    .scrollable {
-        border-radius: 0.5vw;
-        max-width: 80vw;
-        overflow-x: clip;
-        overflow-y: auto;
-        position: relative;
+    .personal-subheader {
+        font-size: 4.5vw;
+    }
+    
+    .personal-subheader-r {
+        font-size: 4.5vw;
+        left: 57.5vw;
     }
 
-    .photo-section {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    .scrollable {
+        max-width: 75vw;
     }
 
     .photo-section img {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
-        margin: 1.5vw;
-        width: 80vw;
+        width: 75vw;
     }
 
     .scrollable > .vertical-photoset img {
-        width: 38.5vw;
+        width: 33.5vw;
     }
 
     /*about me page ===============================================================*/
 
     .about-me img {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        position: relative;
-        top: var(--rhythm-4);
-        width: 60vw;
+        top: var(--rhythm-3);
+        width: 40vw;
     }
 
     .about-me img.horizontal-image {
-        border-radius: 0.5vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
-        position: relative;
-        top: var(--rhythm-1);
-        width: 80vw;
+        width: 60vw;
     }
 
     .about-icons {
-        align-items: center;
-        background-color: #151710;
-        border-radius: 1vw;
-        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
-        display: flex;
-        justify-content: center;
-        margin-top: -15vw;
+        margin-top: -10vw;
+        max-width: 80vw;
     }
 
     .about-icons img {
-        margin: 6vw;
-        width: 15vw;
+        margin: 4vw;
+        width: 10vw;
     }
 
     /*resume page =================================================================*/

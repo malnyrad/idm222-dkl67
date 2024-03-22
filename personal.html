@@ -1,5 +1,5 @@
-<!--personal works page-->
 <!DOCTYPE html>
+<!--personal works page-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,6 @@
         <div class="half-space"></div>
         <h2 class="blank-space center-align lower-case no-margin page-header">Personal</h2>
         <div class="blank-space"></div>
-        <div class="half-space"></div>
         <!--jump nav-->
         <!--experimented with tabs and fixed scrolling fields, but couldn't iron it out in time.
             - html/css tabs: https://gist.github.com/brickbones/0b447985b10f143a160bcf2e1d69726a
@@ -43,7 +42,10 @@
         </div>
         <!--photography-->
         <h2 id="photography" class="blank-space center-align lower-case no-margin page-header">Photography</h2>
-        <div class="half-space"></div>
+        <div class="personal-nav">
+            <a href="#digital" class="personal-subheader-r">next &#9656;</a>
+        </div>
+        <div class="quarter-space"></div>
         <div class="photo-section scrollable">
             <img src="images/bw_piano.jpg" alt="A black and white shot of a piano">
             <div class="vertical-photoset">
@@ -81,13 +83,13 @@
                 <img src="images/cliff_walk2.jpg" alt="A view of a rocky beach in Kauai">
             </div>
         </div>
-        <div class="back-to-top half-space">
-            <a href="#"><img src="images/circle.svg" class="genie-inv-filter" alt="circle"></a>
-            <a href="#" class="button-link center-align">to top</a>
-        </div>
         <!--digital media-->
         <h2 id="digital" class="blank-space center-align lower-case no-margin page-header">Digital Media</h2>
-        <div class="half-space"></div>
+        <div class="personal-nav">
+            <a href="#photography" class="personal-subheader">&#9666; prev</a>
+            <a href="#mixed" class="personal-subheader">next &#9656;</a>
+        </div>
+        <div class="quarter-space"></div>
         <div class="photo-section scrollable">
             <img src="images/low_poly.webp" alt="A low-poly self-portrait">
             <img src="images/alis_in_wvnderland.webp" alt="An album cover based on Alice in Wonderland">
@@ -95,13 +97,12 @@
             <img src="images/nesocodon_mauritianus.webp" alt="A man with nesocodon flowers, which produce red nectar">
             <img src="images/mermay.webp" alt="A drowning man being saved by a merperson, made for Mermay">
         </div>
-        <div class="back-to-top half-space">
-            <a href="#"><img src="images/circle.svg" class="genie-inv-filter" alt="circle"></a>
-            <a href="#" class="button-link center-align">to top</a>
-        </div>
         <!--mixed media-->
         <h2 id="mixed" class="blank-space center-align lower-case no-margin page-header">Mixed Media</h2>
-        <div class="half-space"></div>
+        <div class="personal-nav">
+            <a href="#digital" class="personal-subheader">&#9666; prev</a>
+        </div>
+        <div class="quarter-space"></div>
         <div class="photo-section scrollable">
             <img src="images/still_life1.webp" alt="A still life sketch with chairs and blocks">
             <img src="images/still_life2.webp" alt="A still life charcoal drawing of a hanging sheet">
