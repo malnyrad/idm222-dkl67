@@ -1,4 +1,5 @@
 /*import fonts ================================================================*/
+
 @font-face {
     font-family: 'areminiscentsmile';
     src: url(../fonts/areminiscentsmile-regular.ttf) format(TrueType);
@@ -17,8 +18,8 @@
     font-style: normal;
 }
 
-
 /*define variables ============================================================*/
+
 html {
     /*light mode ======================*/
     --background-light: #F1F6EC;
@@ -49,7 +50,8 @@ html {
 
 /*color changes ===============================================================
     - icon color filter: https://codepen.io/sosuke/pen/Pjoqqp*/
-/*light mode ==========================*/
+
+    /*light mode ==========================*/
 .nutmeg {
     background-color: var(--nutmeg);
     fill: var(--nutmeg);
@@ -156,6 +158,7 @@ html {
 }
 
 /*general formatting ==========================================================*/
+
 /*elements ============================*/
 * {
     box-sizing: border-box;
@@ -194,6 +197,7 @@ h1 {
     font-weight: 400;
     letter-spacing: .025rem;
     line-height: 150%;
+    padding-bottom: var(--rhythm-1);
 }
 
 h2 {
@@ -212,17 +216,9 @@ h3 {
     margin: var(--rhythm-4) 1vw var(--rhythm-1) 1vw;
 }
 
-h4 {
-    font-family: var(--aremsmile);
-    font-size: 7vw;
-    font-style: normal;
-    font-weight: 500;
-    margin: 3vw;
-}
-
 h5 {
     font-family: var(--ot-round);
-    font-size: 5vw;
+    font-size: 5.5vw;
     font-style: normal;
     font-weight: 400;
 }
@@ -360,7 +356,7 @@ img {
 
 /*buttons =============================*/
 .see-more-button img {
-    left: 21.75vw;
+    left: 21.35vw;
     position: relative;
     width: var(--rhythm-3);
 }
@@ -424,9 +420,9 @@ img {
     top: -8.5vw;
 }
 
-
 /*navigation ==================================================================
     - sliding hamburger menu: https://codepen.io/alvarotrigo/pen/yLzaPVJ*/
+
 .header-bar {
     align-items: center;
     background-color: #151710;
@@ -504,9 +500,9 @@ img {
     background-color: rgba(9, 13, 3, .75);
 }
 
-
 /*home page ===================================================================
     - overlapping reference: https://jsfiddle.net/25UTA/1/*/
+
 .title-top {
     letter-spacing: 0.3rem;
     position: absolute;
@@ -566,8 +562,8 @@ article > img.horizontal-image {
     font-size: 3.5vw;
 }
 
-
 /*projects pages ==============================================================*/
+
 .project-header {
     font-size: 12vw;
     margin-bottom: 0;
@@ -609,8 +605,8 @@ main > img.project-horizontal {
     width: 25.5vw;
 }
 
-
 /*personal page ===============================================================*/
+
 .scrollable {
     border-radius: 0.5vw;
     max-width: 80vw;
@@ -637,8 +633,8 @@ main > img.project-horizontal {
     width: 38.5vw;
 }
 
-
 /*about me page ===============================================================*/
+
 .about-me img {
     border-radius: 0.5vw;
     box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
@@ -670,7 +666,6 @@ main > img.project-horizontal {
     width: 15vw;
 }
 
-
 /*resume page =================================================================*/
 
 .resume-icon {
@@ -686,4 +681,385 @@ main > img.project-horizontal {
     top: 55vw;
     width: 15vw;
     z-index: -1;
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+
+@media (min-width: 744px) {
+    /*general formatting ==========================================================*/
+    /*elements ============================*/
+    main {
+        margin: 0 var(--rhythm-3);
+    }
+
+    /*text ================================*/
+    h1 {
+        font-size: 32vw; 
+    }
+
+    h2 {
+        font-size: 8vw; 
+    }
+
+    h3 {
+        font-size: 9vw; 
+    }
+
+    h5 {
+        font-size: 4.75vw;
+    }
+
+    h6 {
+        font-size: 12vw; 
+    }
+
+    p {
+        font-size: 2.5vw;
+    }
+
+    .logo {
+        position: relative;
+        top: -1vw;
+    }
+
+    .page-header {
+        font-size: 12vw;
+    }
+
+    .tag-line {
+        font-size: 3.5vw;
+    }
+
+    main > ul, main li {
+        font-size: 2.5vw;
+    }
+
+    /*spacing =============================*/
+
+    .blank-space {
+        padding-top: var(--rhythm-3);
+    }
+    
+    /*images ==============================*/
+
+    img {
+        width: 100%;
+    }
+
+    .vertical-photoset {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .vertical-photoset img {
+        width: 43vw;
+    }
+
+    .bg-deco {
+        background-attachment: fixed;
+        background-image: url("../images/bg_sphere2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .bg-deco-2 {
+        background-attachment: fixed;
+        background-image: url("../images/bg_sphere.png");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    /*buttons =============================*/
+
+    .see-more-button img {
+        left: 20vw;
+        position: relative;
+        top: -1vw;
+        width: 12.5vw;
+    }
+
+    .see-more-button a.button-link {
+        font-size: 4.5vw;
+        left: -4.5vw;
+        position: relative;
+        top: -6vw;
+    }
+
+    .prev-button {
+        margin-left: var(--rhythm-3);
+    }
+
+    .prev-button img {
+        position: relative;
+        width: var(--rhythm-3);
+    }
+
+    .prev-button a.button-link {
+        left: -11.25vw;
+        position: relative;
+        top: -6vw;
+    }
+
+    .next-button {
+        margin-left: -15vw;
+    }
+
+    .next-button img {
+        left: 64.5vw;
+        position: relative;
+        width: var(--rhythm-3);
+    }
+
+    .next-button a.button-link {
+        left: 43.5vw;
+        position: relative;
+        top: -6vw;
+    }
+
+    .back-button img, .back-to-top img {
+        left: 30vw;
+        position: relative;
+        width: var(--rhythm-3);
+    }
+
+    .back-button a.button-link {
+        color: var(--background-dark);
+        font-size: 4.5vw;
+        left: 13.5vw;
+        position: relative;
+        top: -8.5vw;
+    }
+
+    .back-to-top a.button-link {
+        font-size: 3.5vw;
+        left: 17.5vw;
+        top: -6.5vw;
+    }
+
+    /*navigation ==================================================================
+        - sliding hamburger menu: https://codepen.io/alvarotrigo/pen/yLzaPVJ*/
+
+    .header-bar {
+        align-items: center;
+        background-color: #151710;
+        box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, .25);
+        display: flex;
+        flex-direction: column;
+        height: var(--rhythm-3);
+        justify-content: center;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    #toggle {
+        opacity: 0;
+    }
+
+    #toggle:checked ~ .menu-overlay {
+        right: 0 !important;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        position: fixed;
+        right: var(--rhythm-1);
+        top: 4.5vw;
+        width: 7.5vw;
+        z-index: 3;
+    }
+
+    .menu-overlay {
+        background: linear-gradient(to right, rgba(15, 19, 9, 0), rgba(15, 19, 9, .8));
+        box-shadow: -0.5vw 0 1.5vw rgba(0, 0, 0, 0);
+    }
+
+    .menu-item, .selected-menu-item {
+        font-size: 6.5vw;
+    }
+
+    /*home page ===================================================================
+        - overlapping reference: https://jsfiddle.net/25UTA/1/*/
+
+    .title-top {
+        top: 50vw;
+    }
+
+    article {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -20vw;
+    }
+
+    article > img {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        position: relative;
+        top: var(--rhythm-4);
+        width: 30vw;
+        z-index: 1;
+    }
+
+    article > img.horizontal-image {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        position: relative;
+        top: var(--rhythm-4);
+        width: 50vw;
+        z-index: 1;
+    }
+
+    .project-box {
+        align-items: center;
+        background-color: #151710;
+        border-radius: 1vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
+        display: flex;
+        flex-direction: column;
+        padding-left: var(--rhythm-1);
+        padding-right: var(--rhythm-1);
+        padding-top: var(--rhythm-4);
+    }
+
+    .project-box h2 {
+        margin-bottom: 1.5vw;
+        margin-top: var(--rhythm-1);
+    }
+
+    .project-box p {
+        margin-bottom: 4.5vw;
+        margin-top: 0;
+    }
+
+    .project-blurb {
+        font-size: 3vw;
+    }
+
+    /*projects pages ==============================================================*/
+
+    .project-header {
+        font-size: 12vw;
+        margin-bottom: 0;
+    }
+
+    main > img {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: var(--rhythm-1);
+        width: 40vw;
+    }
+
+    main > img.project-vertical {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: var(--rhythm-1);
+        width: 50vw;
+    }
+
+    main > img.project-horizontal {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: var(--rhythm-1);
+        width: 80vw;
+    }
+
+    .vertical-photoset > .triple-column {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        width: 25.5vw;
+    }
+
+    /*personal page ===============================================================*/
+
+    .scrollable {
+        border-radius: 0.5vw;
+        max-width: 80vw;
+        overflow-x: clip;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .photo-section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .photo-section img {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
+        margin: 1.5vw;
+        width: 80vw;
+    }
+
+    .scrollable > .vertical-photoset img {
+        width: 38.5vw;
+    }
+
+    /*about me page ===============================================================*/
+
+    .about-me img {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        position: relative;
+        top: var(--rhythm-4);
+        width: 60vw;
+    }
+
+    .about-me img.horizontal-image {
+        border-radius: 0.5vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .25);
+        position: relative;
+        top: var(--rhythm-1);
+        width: 80vw;
+    }
+
+    .about-icons {
+        align-items: center;
+        background-color: #151710;
+        border-radius: 1vw;
+        box-shadow: 0 2vw 2vw rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        margin-top: -15vw;
+    }
+
+    .about-icons img {
+        margin: 6vw;
+        width: 15vw;
+    }
+
+    /*resume page =================================================================*/
+
+    .resume-icon {
+        left: 33.8vw;
+        top: 7vw;
+        width: 6vw;
+    }
+
+    .resume-circle {
+        left: 45.5vw;
+        top: 47.5vw;
+        width: 12.5vw;
+    }
+
+    .resume-dates {
+        font-size: 3.25vw;
+    }
 }
