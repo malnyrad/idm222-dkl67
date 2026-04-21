@@ -278,6 +278,15 @@ main > ul, main li {
     margin-top: -0.5vw;
 }
 
+ul.course-list {
+    padding: 0;
+}
+
+ul.course-list li {
+    line-height: 200%;
+    list-style-type: none;
+}
+
 .lower-case {
     text-transform: lowercase;
 }
